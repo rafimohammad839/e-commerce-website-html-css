@@ -347,3 +347,39 @@ hr {
     flex-basis: 100%;
   }
 }
+
+
+/* --------------Products Page Styles-------------- */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+select {
+  border: 1px solid #ff523b;
+  padding: 4px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin-bottom: 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #ff523b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background-color: #ff523b;
+  color: #fff;
+}
