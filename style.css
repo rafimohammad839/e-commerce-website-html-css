@@ -346,6 +346,19 @@ hr {
   .col-4 {
     flex-basis: 100%;
   }
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .row .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .cart-info p {
+    display: none;
+  }
 }
 
 
@@ -382,4 +395,202 @@ select:focus {
 .page-btn span:hover {
   background-color: #ff523b;
   color: #fff;
+}
+
+/* --------------Single Product Details Styles-------------- */
+.single-product {
+  margin-top: 80px;
+}
+
+.single-product .col-2 img {
+  padding: 0;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product h4 {
+  font-weight: bold;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.single-product select {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  margin-right: 15px;
+  border: 1px solid #ff523b;
+}
+
+.single-product input:focus {
+  outline: 0;
+}
+
+.single-product .fa {
+  color: #ff523b;
+  margin-left: 10px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+/* --------------Cart Page Styles-------------- */
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex: wrap;
+}
+
+th {
+  background-color: #ff523b;
+  color: #fff;
+  text-align: left;
+  padding: 5px;
+  font-weight: normal;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+.cart-page input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #ff523b;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+th:last-child, td:last-child {
+  text-align: end;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* --------------Account Page Styles-------------- */
+.account-page {
+  background-image: radial-gradient(#fff, #ffd6d6);
+  padding: 50px 0;
+}
+
+.form-container {
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  display: inline-block;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: transform 0.3s;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+form .btn:focus {
+  outline: 0;
+}
+
+form input:focus {
+  outline: 0;
+}
+
+#login-form {
+  left: -300px;
+}
+
+#register-form {
+  left: 0;
+}
+
+form a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #ff523b;
+}
+
+#indicator {
+  border: none;
+  background-color: #ff523b;
+  width: 100px;
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: transform 0.2s;
 }
